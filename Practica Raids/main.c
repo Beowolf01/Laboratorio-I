@@ -7,9 +7,9 @@ int main()
     int listadoDeEdades[cantidad];
     int maximo;
     inicializarArray(listadoDeEdades,cantidad);
-    cargaSecuencialDelArray(listadoDeEdades, 10, "Ingrese su edad: ");
+    cargaSecuencialDelArray(listadoDeEdades, cantidad, "Ingrese la edad: ");
     mayor = maximoArray(listadoDeEdades);
-    mostrarArray(listadoDeEdades, 10);
+    mostrarArray(listadoDeEdades, cantidad);
 
 
     /*int numero;
