@@ -73,12 +73,12 @@ int dameElIndicedelMax(int parametroArray[], int cant)
     int indice;
     int indiceDelMaximo;
     int maximo;
+    maximo=dameElMax(parametroArray, cant);
 
     for(indice=0;indice<cant;indice++)
     {
-        if(indice == 0 || parametroArray[indice]>maximo)
+        if(parametroArray[indice]==maximo)
         {
-            maximo=parametroArray[indice];
             indiceDelMaximo=indice;
         }
 
