@@ -26,7 +26,7 @@ int main()
 void cargarEdadesTest(int miArray[], int cant)
 {
     int i;
-    int aux[]={22,33,18, 55};
+    int aux[]={22,33,18,55};
     for(i=0; i<cant; i++)
     {
         miArray[i]=aux[i];
@@ -55,6 +55,6 @@ void mostrarNombresTest(char miArray[][50], int cant)
     int i;
     for(i=0; i<cant; i++)
     {
-        printf("\nPalabras: %s", miArray[i]);
+        printf("\nNombres: %s", miArray[i]);
     }
 }
