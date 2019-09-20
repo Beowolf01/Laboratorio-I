@@ -1,5 +1,29 @@
 #include "Alumno.h"
 
+int buscarLibre(eAlumno lista[], int cant)
+{
+   int i;
+   int index = -1;
+   for(i=0; i<cant; i++)
+   {
+       if(lista[i].estado==LIBRE)
+       {
+           index = i;
+           break;
+       }
+   }
+   return index;
+}
+
+void inicializarAlumnos(eAlumno listaDeAlumnos[], int cant)
+{
+    int i;
+    for(i=0;i<cant;i++)
+    {
+        listaDeAlumnos[i].estado = LIBRE;
+    }
+}
+
 void mostrarAlumno(eAlumno miAlumno)
 {
     printf("%d--%s--%d\n", miAlumno.legajo, miAlumno.nombre, miAlumno.nota);
@@ -18,6 +42,8 @@ eAlumno pedirAlumno()
     printf("Ingrese nota: ");
     scanf("%d", &miAlumno.nota);
 
+    miAlumno.estado = LIBRE;
+
     return miAlumno;
 }
 /*int compararAlumnoPorLegajo(eAlumno miAlumno, eAlumno otroAlumno)
@@ -32,12 +58,25 @@ eAlumno pedirAlumno()
 void cargarAlumnos(eAlumno lista[], int cant)
 {
     int i;
+    i = buscarLibre(lista, cant);
+
+    /*int flag = 0;
     for(i=0; i<cant; i++)
     {
         /*printf("Ingrese legajo: ");
-        scanf("%d", &listaAlumnos[i].)*/
+        scanf("%d", &listaAlumnos[i].)
 
-        lista[i] = pedirAlumno();//Funcion para lo de arriba.
+        if(lista[i].estado==LIBRE)
+        {
+            lista[i] = pedirAlumno();//Funcion para lo de arriba.
+            lista[i].estado = OCUPADO;
+            flag = 1;
+            break;
+        }*/
+    }
+    if(flag==0)
+    {
+        printf("No hay espacio\n");
     }
 }
 void mostrarListadoDeAlumnos(eAlumno lista[], int cant)
@@ -45,7 +84,10 @@ void mostrarListadoDeAlumnos(eAlumno lista[], int cant)
     int i;
     for(i=0; i<cant; i++)//Necesito un for para atravesar el array.
     {
-        mostrarAlumno(lista[i]);
+        if(lista[i].estado==OCUPADO)
+        {
+            mostrarAlumno(lista[i]);
+        }
     }
 
 }
@@ -86,6 +128,24 @@ void hardcoderAlumnos(eAlumno lista[], int cant)
         lista[i].legajo=legajo[i];//Acá si, da igual como esté codeado
         lista[i].nota=nota[i];//Solo es para cargar datos
         strcpy(lista[i].nombre, nombre[i]);
+        lista[i].estado = OCUPADO;
     }
 
+}
+
+int buscarAlumnoPorLegajo(eAlumno* lista, int cant, int legajo)
+{
+    int i;
+    int retorno = -1;
+    if(lista!=NULL && cant>0)
+    {
+        for(i=0; i<cant; i++)
+        {
+            if(lista[i].legajo==legajo)
+            {
+                retorno = i;
+                break;
+            }
+        }
+    }
 }

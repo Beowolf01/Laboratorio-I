@@ -2,12 +2,12 @@
 1568386706 source:d:\paredes\laboratorio-i\estructuras\alumno.c
 	"Alumno.h"
 
-1568386610 d:\paredes\laboratorio-i\estructuras\alumno.h
+1568991862 d:\paredes\laboratorio-i\estructuras\alumno.h
 	<stdio.h>
 	<string.h>
-
-1568386706 source:d:\paredes\laboratorio-i\estructuras\main.c
 	<stdio.h>
+
+1568991862 source:d:\paredes\laboratorio-i\estructuras\main.c
 	<stdlib.h>
 	"Alumno.h"
 

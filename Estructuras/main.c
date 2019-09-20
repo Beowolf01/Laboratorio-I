@@ -1,7 +1,6 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include "Alumno.h"
-#define A 5
+#define A 2
 
 //struct eAlumno asi se encuentra en el apunte y es para autocompletar.
 
@@ -10,6 +9,8 @@ int main()
     eAlumno listaAlumnos[A];
     int i;
     int opcion;
+
+    inicializarAlumnos(listaAlumnos, A);
 
     do
     {
@@ -21,8 +22,8 @@ int main()
         switch(opcion)
         {
         case 1:
-            //cargarAlumnos(listaAlumnos, A);
-            hardcoderAlumnos(listaAlumnos, A);
+            cargarAlumnos(listaAlumnos, A);
+            //hardcoderAlumnos(listaAlumnos, A);
             break;
         case 2:
             mostrarListadoDeAlumnos(listaAlumnos, A);
