@@ -55,11 +55,11 @@ int main()
                 switch(retorno)
                 {
                 case 0:
-                    printf("Se elimino");
+                    printf("Se elimino\n");
                     break;
 
                 case 1:
-                    printf("Accion cancelada por el usuario");
+                    printf("Accion cancelada por el usuario\n");
                     break;
 
                 case -1:
