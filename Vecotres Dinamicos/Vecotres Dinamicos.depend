@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1571416028 source:d:\paredes\laboratorio-i\vecotres dinamicos\main.c
+	<stdio.h>
+	<stdlib.h>
+

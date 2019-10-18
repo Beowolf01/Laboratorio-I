@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1571422016 source:d:\paredes\laboratorio-i\clase 16\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Persona.h"
+
+1571422016 d:\paredes\laboratorio-i\clase 16\persona.h
+	<stdio.h>
+	<stdlib.h>
+
+1571421001 source:d:\paredes\laboratorio-i\clase 16\persona.c
+	"Persona.h"
+
