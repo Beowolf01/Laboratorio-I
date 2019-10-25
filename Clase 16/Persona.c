@@ -13,7 +13,7 @@ int mostrarPersona(ePersona* unaPersona)
     int ret = -1;
     if(unaPersona!=NULL)
     {
-            printf("%d--%d--%f", unaPersona->legajo, unaPersona->edad, unaPersona->altura);
+            printf("%d--%c--%f", unaPersona->legajo, unaPersona->edad, unaPersona->altura);
 
             ret = 1;
     }
@@ -44,6 +44,24 @@ ePersona* new_Persona_Parametros(int legajo, int edad, float altura)
 
     return miPersona;
 
+}
 
+int setLegajo(ePersona* unaPersona, int legajo)
+{
+    int seteo = -1;
+    if(unaPersona != NULL && legajo > 0)
+    {
+        unaPersona->legajo = legajo;
+        seteo = 1;
+    }
+    return seteo;
+}
 
+int getLegajo(ePersona* unaPersona)
+{
+    int legajo = -1;
+    if(unaPersona != NULL)
+    {
+        legajo = unaPersona->legajo;
+    }
 }
