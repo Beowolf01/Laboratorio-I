@@ -21,7 +21,7 @@
 
 int main()
 {
-    int len = 0;
+    /*int len = 0;
     int i;
     int option = 0;
     Employee* aux;
@@ -103,7 +103,7 @@ int main()
         aux = (Employee*) ll_get(listaEmpleados, i);
 
         printf("%d--%s--%d--%d\n", aux->id, aux->nombre, aux->horasTrabajadas, aux->sueldo);//acá usamos los getters en vez de las flchas.
-    }
+    }*/
 
 
 

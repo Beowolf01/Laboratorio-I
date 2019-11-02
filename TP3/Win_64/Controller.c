@@ -13,7 +13,29 @@
  */
 int controller_loadFromText(char* path , LinkedList* pArrayListEmployee)
 {
-    return 1;
+     FILE* file= fopen(path,"r");
+    int allOK=-1;
+
+    if(file!=NULL && pArrayListEmployee!=NULL)
+    {
+        allOK= parser_EmployeeFromText(file,pArrayListEmployee);
+
+        if(allOK==0)
+        {
+            printf("Se han cargado los archivos correctamente\n\n");
+        }else
+        {
+            printf("No se han cargado los archivos correctamente\n\n");
+        }
+
+    }else
+    {
+        printf("El archivo \"%s\" no ha sido encontrado\n\n",path);
+    }
+
+    fclose(file);
+
+    return allOK;
 }
 
 /** \brief Carga los datos de los empleados desde el archivo data.csv (modo binario).
