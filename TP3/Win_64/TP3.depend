@@ -73,3 +73,50 @@
 	"LinkedList.h"
 	"Employee.h"
 
+1573140567 source:d:\paredes\laboratorio-i\tp3\win_64\controller.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"Employee.h"
+	"parser.h"
+	"Input.h"
+
+1572620719 d:\paredes\laboratorio-i\tp3\win_64\linkedlist.h
+
+1573140730 d:\paredes\laboratorio-i\tp3\win_64\employee.h
+
+1572620720 d:\paredes\laboratorio-i\tp3\win_64\parser.h
+
+1573140567 d:\paredes\laboratorio-i\tp3\win_64\input.h
+
+1573140936 source:d:\paredes\laboratorio-i\tp3\win_64\employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Employee.h"
+	"LinkedList.h"
+
+1573140567 source:d:\paredes\laboratorio-i\tp3\win_64\input.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"./input.h"
+
+1573140567 source:d:\paredes\laboratorio-i\tp3\win_64\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+	"Input.h"
+
+1572620719 d:\paredes\laboratorio-i\tp3\win_64\controller.h
+
+1572703196 source:d:\paredes\laboratorio-i\tp3\win_64\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+

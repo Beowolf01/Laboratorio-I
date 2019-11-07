@@ -1,5 +1,9 @@
-#include "Employee.h"
+#include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
+#include "Employee.h"
+#include "LinkedList.h"
+
 
 Employee* employee_new()
 {
@@ -180,12 +184,3 @@ int employee_setSueldo(Employee* this,int sueldo)
 
     return allOK;
 }
-
-int comparaPorNombre(void*, void*)
-{
-    Employee* e1 = (Employee*) p1;
-    Employee* e2 = (Employee*) p2;
-
-    return strcmp(e1->nombre, e2->nombre);
-}
-

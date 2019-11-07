@@ -24,6 +24,4 @@ int employee_getHorasTrabajadas(Employee* this,int* horasTrabajadas);
 int employee_setSueldo(Employee* this,int sueldo);
 int employee_getSueldo(Employee* this,int* sueldo);
 
-int comparaPorNombre(void*, void*);
-
 #endif // employee_H_INCLUDED
